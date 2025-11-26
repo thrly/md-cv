@@ -1,102 +1,86 @@
-# Markdown CV Formatting Workflow
+---
+title: CV
+author: Mohamed Amor
+email: mohamed.amor@rennes-sb.com
+phone: "+33 06 71 23 35 26"
+linkedin: mohamedamor1
+updated: Novembre 2025
+---
 
-[![Render CV](https://github.com/thrly/cv-md/actions/workflows/convert-cv.yml/badge.svg)](https://github.com/thrly/md-cv/actions/workflows/convert-cv.yml)
+# Mohamed Amor
+**Analyste Performance Logistique & Supply Chain**  
+*Expert en Optimisation des Coûts | Pilotage de la Performance | Analyse Data*
 
-Keep your markdown CV up-to-date with version control and available in various common formats: HTML, PDF, DOCX, and LaTeX. A [live web version](https://thrly.github.io/cv-md/outputs/cv.html) is also hosted with GitHub Pages.
+## Profil
+Analyste Performance Logistique dynamique et rigoureux, spécialisé dans l'optimisation des chaînes logistiques et le pilotage de la performance opérationnelle. Fort d'une expertise en analyse de données et gestion de projets, je maîtrise la mise en place d'indicateurs et tableaux de bord pour le suivi de la performance. Je recherche à intégrer la SNCF pour contribuer à l'excellence opérationnelle de la supply chain.
 
-The format rendering is handled using GitHub actions using Pandoc via official Docker images.
+## Formation
 
-![Diagram](img/cv-diagram.svg)
+### MSc Supply Chain Management
+*Rennes School of Business, Rennes*  
+Janvier 2024 - Février 2026
 
-## Project Structure
+### Master M2 Management et Stratégie
+*IHEC Carthage, Tunis*  
+Mars 2021 - Mention Bien
 
-```bash
-cv-md/
-├── .github/
-│   └── workflows/
-│       └── convert-cv.yml     # GitHub Actions workflow for conversion
-├── cv/
-│   ├── cv.md                  # Your CV in Markdown format
-│   └── templates/
-│       ├── cv-template.tex    # LaTeX template
-│       ├── cv-template.html   # HTML template
-│       ├── cv-template.docx   # DOCX reference
-│       └── style.css          # Custom CSS for HTML output
-├── outputs/
-│   ├── cv.html                # Generated CV in HTML format
-│   ├── cv.pdf                 # Generated CV in PDF format
-│   ├── cv.docx                # Generated CV in DOCX format
-│   └── cv.tex                 # Generated CV in LaTeX format
-└── README.md                  # Project docs
-```
+## Expérience Professionnelle
 
-## How It Works
+### Stagiaire Supply Chain - Performance
+*RENAULT GROUP SAS, Guyancourt*  
+Juillet 2025 - Décembre 2025
 
-- On every push to the [cv.md](/cv/cv.md) file or `cv/templates/`, the workflow runs and:
-  - Converts `cv/cv.md` to PDF, LaTeX, DOCX, and HTML using Pandoc Docker images.
-  - Saves all generated files in the `outputs/` directory.
-  - Uploads the `outputs/` directory as a workflow artifact.
-  - Commits and pushes the updated `outputs/` directory back to the repository (on GitHub Actions only).
-  - Live HTML version hosted on GitHub Pages (after forked repo setup, see below).
+- Développé et implémenté des tableaux de bord de performance logistique sous Spotfire
+- Participé au suivi des indicateurs de performance des prestataires logistiques
+- Collaboré avec les équipes finance pour analyser les écarts entre réalisé et prévisionnel
+- Contribué à l'optimisation des coûts logistiques via l'analyse des processus
+- Mise en place d'actions d'amélioration continue des processus supply chain
 
-## Getting Started
+### Responsable des Opérations & Performance
+*BYTECODE LABS SUARL, Tunis*  
+Juin 2021 - Décembre 2023
 
-1. **Fork this repository**
-   - (Optional:) [Set up GitHub Pages for a live HTML version](#github-pages).
+- Piloté la performance opérationnelle d'une équipe pluridisciplinaire
+- Développé des indicateurs KPI pour le suivi de la performance des prestataires
+- Animé un réseau de collaborateurs pour l'amélioration des processus
+- Géré des projets d'optimisation des coûts et de la qualité de service
+- Mise en œuvre d'actions qualité et d'amélioration continue
 
-2. **Clone to your local machine**
+### Stagiaire Analyse Commerciale
+*MAWASIM TOURS SARL, Tunis*  
+Août 2019 - Janvier 2020
 
-   ```bash
-   git clone https://github.com/YOUR_GITHUB_USERNAME/cv-md.git
-   cd md-cv
-   ```
+- Analysé les données de performance commerciale et logistique
+- Participé à l'élaboration de rapports de performance
+- Supporté la mise en place d'indicateurs de suivi
 
-3. **Edit Your CV**
+## Compétences
 
-   Update `cv/cv.md` with your latest information. You can also edit templates in `cv/templates/`.
+**Compétences Techniques:**
+- **Analyse Data:** Power BI, Spotfire, Excel Avancé (VBA, Power Query), SQL
+- **Gestion de Projets:** Méthodes Agile, Gestion documentaire, Pilotage production
+- **Logistique:** Supply Chain, Gestion stocks, Optimisation coûts, Indicateurs performance
 
-4. **Push Changes**
+**Compétences Métier:**
+- Animation de réseau et Business Partnering
+- Pilotage de la performance logistique
+- Gestion de contrats prestataires
+- Amélioration continue des processus
+- Orientation client et service
 
-   ```bash
-   git add cv/cv.md
-   git commit -m "Update CV"
-   git push origin main
-   ```
+## Certifications
 
-5. **Workflow Execution**
+- **Lean Six Sigma Yellow Belt** - 2023
+- **Gestion de Projets Agile** - 2022
 
-   - The workflow triggers automatically on push.
-   - You can monitor progress in the "Actions" tab on GitHub.
+## Projets
 
-6. **Accessing Outputs**
+**Optimisation des Processus Logistiques**  
+Mise en place d'un système de suivi de performance pour les prestataires logistiques, permettant une réduction des coûts de 15% et une amélioration de la qualité de service de 25%
 
-   - The latest generated files are always available in / pushed to the `outputs/` directory in the repository.
-   - You can also download them as workflow artifacts from the GitHub Actions run summary.
+**Développement Tableaux de Bord Performance**  
+Création de dashboards interactifs sous Power BI pour le pilotage de la performance logistique, améliorant la visibilité opérationnelle de 40%
 
-## GitHub Pages
+## Contact
 
-To enhable a hosted GitHub Pages version:
-
-1. Go to your repo Settings > Pages.
-2. Under `Source`, select `Deploy from a branch`
-3. Under branch, select `master` and `/(root)`. Save
-4. Your CV will be accessible at: `https://YOUR-GITHUB-USERNAME.github.io/cv-md/outputs/cv`
-
-## Notes
-
-- The workflow uses official Pandoc Docker images for reproducible builds.
-- The `outputs/` directory is committed back to the repository automatically (only on GitHub Actions, not when running locally with `act`).
-
-> [!CAUTION]
-> If you run the workflow locally with [`act`](https://github.com/nektos/act), the commit/push step is skipped to avoid hangs or errors.
-
-> [!NOTE]
-> If you run change the latex template, you may find errors where packages are not already included in the [`docker://pandoc/extra`](https://hub.docker.com/r/pandoc/extra) build.
-
-## Requirements
-
-- A GitHub account with Actions enabled.
-- No local Pandoc or TeX installation is required; all conversion is handled in the workflow.
-
-## Read More
-You can read a bit more about this project [on my blog.](https://thrly.com/blog/cv-workflow/)
+N'hésitez pas à me contacter par [email](mailto:mohamed.amor@rennes-sb.com) ou via [LinkedIn](https://linkedin.com/in/mohamedamor1) pour échanger sur cette opportunité.
